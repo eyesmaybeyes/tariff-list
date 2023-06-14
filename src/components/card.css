@@ -1,0 +1,67 @@
+:root {
+    background-color: rgb(244, 244, 244);
+}
+
+[theme="blue"] {
+    --theme: #2eb2d2;
+    --theme-darker: #148ba8;
+}
+
+[theme="green"] {
+    --theme: #0ea765;
+    --theme-darker: #0a7245;
+}
+
+[theme="red"] {
+    --theme: #fc7455;
+    --theme-darker: #de4328;
+}
+
+[theme="black"] {
+    --theme: #353535;
+    --theme-darker: rgb(33, 31, 31);
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    column-gap: 1px;
+    text-align: center;
+}
+
+.card > * {
+    padding: 1.5em 2em;
+}
+
+.card__title {
+    font-size: 1.3em;
+    background-color: var(--theme-darker);
+    color: rgb(237, 237, 223);
+}
+
+.card__price {
+    background-color: var(--theme);
+    color: rgb(237, 237, 223);
+}
+
+.price-span {
+    font-size: 2em;
+}
+
+.card__speed {
+    color: gray;
+    background-color: rgb(247, 247, 254);
+}
+
+.card__desc {
+    background-color: #e3e3e3;
+    color: gray;
+}
+
+.card_accented {
+    margin-bottom: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
