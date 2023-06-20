@@ -29,7 +29,9 @@
     column-gap: 1px;
     text-align: center;
 }
-
+.card:hover {
+    cursor: pointer;
+}
 .card > * {
     padding: 1.5em 2em;
 }
