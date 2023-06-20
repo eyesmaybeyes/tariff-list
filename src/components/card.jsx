@@ -1,12 +1,17 @@
 import "./Card.css";
 
 function Card(props) {
-    const { item } = props;
+    const { item, isSelected, onSelect } = props;
+
+    const handleCardClick = () => {
+        onSelect(item);
+    };
+
     return (
         <div
-            className={`card ${item.accent ? "card_accented" : ""}`}
-            accent={item.accent}
+            className={`card ${isSelected ? "card_selected" : ""}`}
             theme={item.theme}
+            onClick={handleCardClick}
         >
             <div className="card__title">{item.name}</div>
             <div className="card__price">
