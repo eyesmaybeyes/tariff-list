@@ -1,11 +1,15 @@
-import './components/card.css';
-import { Card } from './components/card.jsx';
+import { Card } from './components/Card.jsx';
+import data from "./tariffs.json";
 
 function App() {
   return (
-    <div className="App">
-      <Card></Card>
-    </div>
+    <>
+      <div className="card-container">
+        {data.map((item) => (
+          <Card key={item.id} item={item} />
+        ))}
+      </div>
+    </>
   );
 }
 
